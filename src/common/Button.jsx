@@ -1,8 +1,19 @@
 import React from 'react'
+import { useDispatch } from 'react-redux'
+import { plus, moins, reset } from '../redux'
 
-const Button = ({name}) => {
+
+const Button = () => {
+
+  const dispatch = useDispatch();
+
   return (
-    <button className="btn">{name}</button>
+    <>
+    <button onClick={()=>dispatch(moins())} className="btn">Moins</button>
+    <button onClick={()=>dispatch(plus())} className="btn">Plus</button>
+    <button onClick={()=>dispatch(reset())} className="btn">Reset</button>
+
+    </>
   )
 }
 

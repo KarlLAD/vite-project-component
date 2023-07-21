@@ -6,11 +6,14 @@ import './App.css'
 
 
 
-import FormInput from './common/FormInput'
+import FormInput from './common/FormInput' ;
 
 import ListItem from './common/ListItem' ;
 
 import AfficheCompteur from './common/AfficheCompteur';
+
+import Button from './common/Button';
+
 
 
 function App() {
@@ -20,7 +23,8 @@ function App() {
 
     <Provider store={store}>
     <div className='App'>
-      <AfficheCompteur />
+      {/* <AfficheCompteur />
+      <Button /> */}
       <FormInput /> 
       <ListItem />
 
